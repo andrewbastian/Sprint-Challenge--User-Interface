@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -65,10 +65,41 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
+header{
+display: flex;
+flex-flow: column nowrap;
+justify-content: center;
+margin-bottom: 25px;
+}
 
+.ImgNav{
+	display:flex;
+	justify-content: space-between;
+	align-items: baseline;
+	padding-bottom: 25px;
+}
+
+header nav {
+	display: flex;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+}
+
+a{
+text-decoration: none;
+color: black;
+}
 .container {
     width: 800px;
     margin: 0 auto;
+		display: flex;
+		flex-flow: column;
+
 }
 
 .top-content {
@@ -82,7 +113,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -110,6 +141,54 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.box1, .box2, .box3,
+.box4, .box4, .box5, .box6, .box7, .box8, .box9, .box10
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box1{
+	background-color: teal;
+}
+
+.box2{
+	background-color: gold;
+}
+
+.box3{
+	background-color: cadetblue;
+}
+
+.box4{
+	background-color: coral;
+}
+
+.box5{
+	background-color: crimson;
+}
+
+.box6{
+	background-color: forestgreen;
+}
+
+.box7{
+	background: darkorchid;
+}
+
+.box8{
+	background: hotpink;
+}
+
+.box9{
+	background-color: indigo;
+}
+
+.box10{
+	background-color: dodgerblue;
 }
 
 .bottom-content {
@@ -143,4 +222,61 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+.about{
+	padding: 22px;
+	padding-top: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.artLinks{
+display: flex;
+flex-wrap:wrap;
+justify-content:space-evenly;
+align-items: center;
+padding-bottom: 25px;
+border-top: 1px dashed black
+}
+article{
+	width:45%;
+	display: flex;
+	flex-flow: column wrap;
+	border-bottom: 1px dashed black;
+	padding-top: 25px;
+}
+.imgPad{
+	padding-top: 20px;
+}
+button{
+	background: white;
+	color: black;
+	width: 40%;
+	padding: 2%;
+	font-size: 14px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+a:hover, button:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+a:hover{
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	color: white;
+	border-radius: 12px;
+	height: auto;
+	width: 25%;
+}
+.workTogether {
+	padding: 22px;
+	padding-top: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 }
